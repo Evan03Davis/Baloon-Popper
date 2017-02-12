@@ -1,1 +1,13 @@
+local url = "https://raw.githubusercontent.com/Evan03Davis/Baloon-Popper/master/Main.lua"
 
+function success(data)
+    saveProjectTab("Main", data)
+    close()
+end
+
+function fail(error)
+    print("Can't connect to given URL")
+    assert(error)
+end
+
+http.request(url, success, fail)
