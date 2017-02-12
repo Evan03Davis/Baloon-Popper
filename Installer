@@ -64,10 +64,6 @@ function setup()
     switch = Switch("Switch", WIDTH*.45, HEIGHT*.7, 100, 100, callback)
 
 end
-
-
-
-
 --# FunctionDraw
 function draw()
 if lives<=0 then state="gameOVER"
